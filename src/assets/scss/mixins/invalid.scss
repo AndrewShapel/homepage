@@ -1,0 +1,10 @@
+@import '../colors';
+
+@mixin invalid() {
+  border-color: $color-red;
+  color: $color-red;
+
+  &::placeholder {
+    color: $color-red;
+  }
+}

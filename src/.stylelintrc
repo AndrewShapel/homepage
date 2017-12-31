@@ -1,0 +1,12 @@
+{
+  "processors": [
+    "stylelint-processor-html"
+  ],
+  "extends": [
+    "stylelint-config-sass-guidelines"
+  ],
+  "rules": {
+    "max-nesting-depth": 20,
+    "selector-class-pattern": null
+  }
+}

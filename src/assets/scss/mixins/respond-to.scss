@@ -1,0 +1,45 @@
+@import '../breakpoints';
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'phone' {
+    @media only screen and (min-width: $breakpoint-phone) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 'phone-large' {
+    @media only screen and (min-width: $breakpoint-phone-large) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 'tablet' {
+    @media only screen and (min-width: $breakpoint-tablet) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 'desktop' {
+    @media only screen and (min-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 'desktop-large' {
+    @media only screen and (min-width: $breakpoint-desktop-large) {
+      @content;
+    }
+  }
+
+  @if breakpoint == 'retina' {
+    @media only screen and (device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+      @content;
+    }
+  }
+
+  @else {
+    @media only screen and (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}

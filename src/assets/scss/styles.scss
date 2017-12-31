@@ -1,0 +1,44 @@
+@import './mixins/center';
+@import './mixins/center-flex';
+@import './mixins/respond-to';
+@import './breakpoints';
+@import './colors';
+
+.section {
+  &__form {
+    max-width: 794px;
+
+    &-input {
+      margin-bottom: 20px;
+      max-width: 340px;
+
+      &:nth-child(odd) {
+        margin-right: 20px;
+      }
+    }
+
+    &-textarea {
+      max-width: 748px;
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+  }
+}
+
+.textarea {
+  border: 2px solid $color-black;
+  color: $color-black;
+  font-size: 18px;
+  padding: 13px 20px;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $color-dark-gray;
+  }
+}

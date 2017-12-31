@@ -1,0 +1,15 @@
+# log files
+*.log
+*.DS_Store
+.npm-debug.log
+logs
+
+# bundles
+/dist/
+
+# ide settings
+.idea
+.vscode
+
+# dependencies
+node_modules
